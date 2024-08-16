@@ -1,0 +1,177 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("https://images.unsplash.com/photo-1693287728941-2e0125a67f90?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D") no-repeat center center fixed;
+    background-size: cover;
+    color: #ececec;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+header.scrolled {
+    background: #1a1a1a;
+}
+
+/* Section Styling */
+.text-block {
+    padding: 40px;
+    margin: 80px auto 20px;
+    max-width: 800px;
+    background-color: #292929;
+    border-left: 5px solid #ff4d4d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.text-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #ff4d4d;
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+/* Projects List */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects ul li {
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#projects ul li:hover {
+    color: #ff4d4d;
+    transform: translateX(10px);
+}
+
+/* Skills Table */
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#skills th, #skills td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+#skills th {
+    background-color: #444;
+    color: #ff4d4d;
+}
+
+#skills td:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+/* Contact Section */
+#contact a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* CSS Animations and Transitions */
+h1, h2 {
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #ff4d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-block {
+        padding: 20px;
+        margin: 70px auto 20px;
+    }
+
+    #about img {
+        max-width: 100px;
+    }
+}
